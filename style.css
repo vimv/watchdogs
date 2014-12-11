@@ -51,3 +51,49 @@
 .header-padding{
 	padding-top: 55px;
 }
+section {
+	border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    min-height: 300px;
+    padding: 7% 15%;
+}
+header h1 {
+    color: #ffffff;
+    font-family: Ubuntu,Arial;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+header h2 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+}
+section.odd header h1{
+	text-align: right;
+}
+section article p {
+    color: #ffffff;
+    width: 55%;
+}
+
+/* To Remove */
+footer.row {
+    color: #ffffff;
+    margin-top: 90px;
+}
+footer .title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+footer .description {
+    font-size: 13px;
+}
+.no-padding-left{
+	padding-left: 0 !important;
+}
+.no-padding-right{
+	padding-right: 0 !important;
+}
+/* /To Remove */

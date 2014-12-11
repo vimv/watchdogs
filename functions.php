@@ -13,3 +13,15 @@ function watchdogs_scripts() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'watchdogs_scripts' );
+add_theme_support( 'post-thumbnails' );
+
+function start_tabs($attr, $content){
+	return '<ul class="nav nav-tabs" role="tablist">'.do_shortcode(str_replace("<br />", '', $content)).'</ul>';
+}
+add_shortcode("start_tabs","start_tabs");
+
+function tab($attr){
+	var_dump($attr, true);
+	return '<li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>';
+}
+add_shortcode("tab","tab");
