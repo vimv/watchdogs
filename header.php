@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="logo relative">
-							<img class="top-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" />
+							<img class="top-logo" src="<?php echo get_theme_mod('header_logo') ?>" />
 						</div>
 					</div>			
 				</div>
@@ -37,9 +37,9 @@
 					
 					<div class="col-sm-2">
 						<ul class="social-h-wrap">
-							<li><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" /></li>
-							<li><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" /></li>
-							<li><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png" /></li>
+							<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_face') ?>" /></a></li>
+							<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_twitter') ?>" /></a></li>
+							<li><a href="<?php echo get_theme_mod('linkedin_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_linked') ?>" /></a></li>
 						</ul>
 										
 					</div>
