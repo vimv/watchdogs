@@ -15,12 +15,10 @@
 		
 		<?php wp_head(); ?>			
 		
-		<script>var homeurl = "<?php bloginfo('home'); ?>";</script>
-		
+		<script>var homeurl = "<?php bloginfo('home'); ?>";</script>		
 	</head>
 
-	<body>
-	
+	<body>	
 		<div id="content-wrap">
 			<div class="top-nav">
 				<div class="container">
