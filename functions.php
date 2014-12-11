@@ -1,5 +1,5 @@
 <?php
-
+global $tabs;
 
 function watchdogs_scripts() {
 	
@@ -16,12 +16,37 @@ add_action( 'wp_enqueue_scripts', 'watchdogs_scripts' );
 add_theme_support( 'post-thumbnails' );
 
 function start_tabs($attr, $content){
-	return '<ul class="nav nav-tabs" role="tablist">'.do_shortcode(str_replace("<br />", '', $content)).'</ul>';
+	global $tabs;
+	return '<div class="table"><ul class="nav nav-tabs" role="tablist">'.do_shortcode(str_replace("<br />", '', $content)).'</ul></div>' . 
+	'<div class="tab-content row">' .
+		$tabs . 
+	'</div>';
 }
 add_shortcode("start_tabs","start_tabs");
 
-function tab($attr){
-	var_dump($attr, true);
-	return '<li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>';
+function tab($attr, $content = false){
+	
+	$a = shortcode_atts( array(
+	    'tab_title' => 'Title',
+		'content_title' => ($attr['content_title']) ? $attr['content_title'] : $attr['tab_title'],
+		'active' => ''
+	), $attr );
+	
+	set_tab_content($a, $content);
+	
+	return '<li role="presentation" class="' . $a['active'] . '">
+				<a href="#' . strtolower($a['tab_title']) . '" aria-controls="' . strtolower($a['tab_title']) . '" role="tab" data-toggle="tab">' . 
+					$a['tab_title'] . 
+				'</a>
+			</li>';
 }
-add_shortcode("tab","tab");
+add_shortcode("tab", "tab");
+
+function set_tab_content($atts, $content = ''){
+	global $tabs;
+	
+	$tabs .= '<div id="' . strtolower($atts['tab_title']) . '" role="tabpanel" class="tab-pane ' . $atts['active'] . ' col-sm-7" >' .
+				'<div class="tab-title">' . $atts['content_title'] . '</div>' .
+				'<div class="tab-content">' . $content . '</div>' .
+			'</div>';
+}

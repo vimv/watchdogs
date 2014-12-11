@@ -85,6 +85,47 @@ section article p {
     color: #ffffff;
     width: 55%;
 }
+/* Tabs */
+.tab-content > div {
+	color: #ffffff;
+    padding: 5% 0 0 5%;
+}
+.tab-content > div .tab-title {
+    font-family: "Ubuntu",Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-tabs > li {
+    border-bottom: 1px solid #ffffff;
+}
+.nav-tabs > li.active {
+    border-bottom: none;
+}
+.nav-tabs > li > a{
+	border: medium none;
+    margin-right: 0;
+}
+.nav > li > a {
+	color: #fff;
+    padding: 20px 45px;
+}
+.nav > li > a:hover {
+	color: #337ab7;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background-color: initial;
+	color: #ffffff;
+	outline: none;
+}
+article .table {
+	display: table;   /* Allow the centering to work */
+	margin: 70px auto 0;
+	width: initial;
+}
+.nav-tabs {
+    border-bottom: none;
+}
 
 /* To Remove */
 footer.row {
