@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row">			
 				<div class="col-sm-3">
-					<img src="<?php bloginfo('template_url'); ?>/images/watchdog-logo-footer.png" />
+					<img src="<?php echo get_theme_mod('footer_logo') ?>" />
 				</div>			
 				<div class="col-sm-9">					
 					<ul class="footer-top-menu1">
@@ -44,9 +44,9 @@
 				<div class="col-sm-4"></div>			
 				<div class="col-sm-4">					
 					<ul class="footer-bottom-social">
-						<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/facebook-circle.png" /></a></li>
-						<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/twitter-circle.png" /></a></li>
-						<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/linkedin-circle.png" /></a></li>						
+						<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('footer_social_face') ?>" /></a></li>
+						<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('footer_social_twitter') ?>" /></a></li>
+						<li><a href="<?php echo get_theme_mod('linkedin_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('footer_social_linked') ?>" /></a></li>						
 					</ul>					
 					<ul class="footer-bot-menu-priv">
 						<li>
