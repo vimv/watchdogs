@@ -4,4 +4,50 @@
 	Version: 1.0
 */
 
+.relative{
+	position: relative;
+}
 
+/************header******************/
+.top-nav{
+	border-bottom: solid #b4b4b4 2px;
+	min-height: 35px;
+}
+
+.top-logo{
+	position: absolute;
+	top: 16px;
+	z-index: 1;
+}
+
+.social-h-wrap, 
+.nav-h-menu{
+	list-style: none;	
+
+}
+
+.social-h-wrap li, 
+.nav-h-menu li{
+	display: inline-block;
+
+}
+
+.nav-h-menu li a{
+	color: 999999;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
+.nav-h-menu li a:hover{
+	color: #264195;
+
+}
+
+#header-menu{
+	min-height: 130px;
+}
+
+.header-padding{
+	padding-top: 55px;
+}
