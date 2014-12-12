@@ -20,8 +20,10 @@
 			$i = 0;
 		?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<?php $image = (has_post_thumbnail( get_the_ID() )) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ) : ''?>
-			<section style="background:url('<?php echo $image[0]; ?>'); background-size: cover;" class="<?php echo ($i % 2 == 0) ? '' : 'odd'?>">
+			<?php $image = (has_post_thumbnail( get_the_ID() )) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ) : ''?>
+			<?php $menu_name = ( $menu_name = get_post_meta(get_the_ID(), 'menu_name', true)) ? $menu_name : get_the_title();?>
+			<?php $menu_hash = sanitize_title($menu_name);?>
+			<section id="<?php echo $menu_hash?>" style="background:url('<?php echo $image[0]; ?>'); background-size: cover;" class="<?php echo ($i % 2 == 0) ? '' : 'odd'?>">
 				<header>
 					<h1><?php the_title() ?></h1>
 					<h2><?php echo get_post_meta(get_the_ID(), 'subtitle', true);?></h2>

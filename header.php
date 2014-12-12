@@ -49,15 +49,24 @@
 							<li>
 								<a href="#">HOME</a>
 							</li>
-							<li>
-								<a href="#">ABOUT US</a>
-							</li>
-							<li>
-								<a href="#">OUR WORK</a>
-							</li>
-							<li>
-								<a href="#">CONTACT</a>
-							</li>
+							<?php 
+							query_posts(array(
+								'posts_per_page' => -1,
+								'meta_key' => 'weight',
+								'orderby' => 'meta_value',
+								'order' => 'ASC'
+							));
+							$i = 0;
+							?>
+							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							<?php $image = (has_post_thumbnail( get_the_ID() )) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ) : ''?>
+								<?php $menu_name = ( $menu_name = get_post_meta(get_the_ID(), 'menu_name', true)) ? $menu_name : get_the_title();?>
+								<?php $menu_hash = sanitize_title($menu_name);?>
+								<li>
+									<a href="<?php echo '#' . $menu_hash; ?>"><?php echo $menu_name; ?></a>
+								</li>
+								<?php $i++;?>
+							<?php endwhile; endif; ?>
 							<li>
 								<img src="<?php bloginfo('template_url'); ?>/images/search.png" />
 							</li>

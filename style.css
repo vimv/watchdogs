@@ -108,7 +108,8 @@ section article p {
 }
 .nav > li > a {
 	color: #fff;
-    padding: 20px 45px;
+    padding: 20px 35px;
+    text-transform: uppercase;
 }
 .nav > li > a:hover {
 	color: #337ab7;
@@ -126,7 +127,9 @@ article .table {
 .nav-tabs {
     border-bottom: none;
 }
-
+.nav-h-menu a{
+	text-transform: uppercase;
+}
 /* To Remove */
 footer.row {
     color: #ffffff;
