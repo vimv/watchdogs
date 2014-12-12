@@ -47,7 +47,7 @@
 					<div class="col-sm-6">
 						<ul class="nav-h-menu">
 							<li>
-								<a href="#">HOME</a>
+								<a href="#slider">HOME</a>
 							</li>
 							<?php 
 							query_posts(array(
