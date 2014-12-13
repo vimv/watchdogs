@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row">			
 				<div class="col-sm-3">
-					<img src="<?php echo get_theme_mod('footer_logo') ?>" />
+					<img src="<?php echo get_theme_mod('footer_logo'); ?>" />
 				</div>			
 				<div class="col-sm-9">					
 					<ul class="footer-top-menu1">

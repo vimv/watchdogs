@@ -79,6 +79,17 @@ function watchdogs_customize_register( $wp_customize ) {
 			'settings'   => 'footer_logo',
 			'section'    => 'watchdogs_images',
 		) ) );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_logo', array(
+		'label'        => __( 'Header Logo', 'watchdogs' ),
+		'settings'   => 'header_logo',
+		'section'    => 'watchdogs_images',
+	) ) );
+	
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_logo', array(
+		'label'        => __( 'Header Logo', 'watchdogs' ),
+		'settings'   => 'footer_logo',
+		'section'    => 'watchdogs_images',
+	) ) );
 	
 	//Social Media Section
 	$wp_customize->add_section( 'watchdogs_social_media' , array(
