@@ -30,12 +30,12 @@
 				</div>
 			</div>
 			
-			<div id="header-menu" class="container">
+			<div id="header-menu">
 				<div class="row header-padding">
-					<div class="col-sm-4">						
+					<div class="col-sm-3">						
 					</div>
 					
-					<div class="col-sm-2">
+					<div class="col-sm-3 col-md-2">
 						<ul class="social-h-wrap">
 							<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_face') ?>" /></a></li>
 							<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_twitter') ?>" /></a></li>
@@ -43,9 +43,16 @@
 						</ul>
 										
 					</div>
-					
-					<div class="col-sm-6">
-					<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+					<div class="col-sm-6 col-md-7">
+					<nav class="navbar" role="navigation">
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav nav-h-menu">
 								<li>
@@ -72,14 +79,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-					    </div>
+						
 					</nav>
 				</div>
 			</div>	

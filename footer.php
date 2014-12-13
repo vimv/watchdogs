@@ -9,28 +9,27 @@
 				<div class="col-sm-3">
 					<img src="<?php echo get_theme_mod('footer_logo'); ?>" />
 				</div>			
-				<div class="col-sm-9">					
-					<ul class="footer-top-menu1">
-						<li><a href="#">MAIN</a></li>
-						<li><a href="#">NAVIGATION</a></li>
-						<li><a href="#">SECTIONS</a></li>
-						<li><a href="#">IN A STICK</a></li>
-						<li><a href="#">MENU</a></li>
-					</ul>
+				<div class="col-sm-9">
+					<?php 
+						wp_nav_menu( 
+							array( 'theme_location' => 'footer-menu', 
+								'container_class' => 'footer-top-menu1' 
+							) 
+						);
+					?>					
 					<img class="footer-up" src="<?php bloginfo('template_url'); ?>/images/arrowup.png" />
 					<ul class="footer-top-section2">
 						<li>
 							<img src="<?php bloginfo('template_url'); ?>/images/pin.png" />
-							9891 MONTGOMERY ROAD #203 
-							<br/> CINCINNATI, OH 45242
+							<?php echo get_theme_mod('footer_location_text'); ?>
 						</li>
 						<li>
 							<img src="<?php bloginfo('template_url'); ?>/images/email.png" />
-							info@watchdogevents.com
+							<?php echo get_theme_mod('footer_email_text'); ?>
 						</li>
 						<li>
 							<img src="<?php bloginfo('template_url'); ?>/images/phone.png" />
-							513 297 2834
+							<?php echo get_theme_mod('footer_phone_text'); ?>
 						</li>						
 					</ul>
 				</div>
@@ -42,7 +41,7 @@
 		<div class="container">
 			<div class="row">			
 				<div class="col-sm-4"></div>			
-				<div class="col-sm-4">					
+				<div class="col-sm-4">						
 					<ul class="footer-bottom-social">
 						<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('footer_social_face') ?>" /></a></li>
 						<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('footer_social_twitter') ?>" /></a></li>

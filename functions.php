@@ -193,6 +193,66 @@ function watchdogs_customize_register( $wp_customize ) {
 		'section'    => 'watchdogs_social_media',
 	) ) );
 	
+	//Footer texts
+	$wp_customize->add_section( 'watchdogs_footer_texts' , array(
+		'title'       => __( 'Footer texts', 'watchdogs' ),
+		'description' => 'texts in the footer',
+	) );
+	
+	$wp_customize->add_setting( 'footer_location_text' , array(
+		'default'     => '9891 MONTGOMERY ROAD #203<br/>CINCINNATI, OH 45242'	
+	) );
+	
+	$wp_customize->add_setting( 'footer_email_text' , array(
+		'default'     => 'info@watchdogevents.com'	
+	) );
+	
+	$wp_customize->add_setting( 'footer_phone_text' , array(
+		'default'     => '513 297 2834'	
+	) );
+	
+	$wp_customize->add_setting( 'copyright' , array(
+		'default'     => '&copy; 2014 '	
+	) );
+	
+	$wp_customize->add_setting( 'additional_text' , array(
+		'default'     => '<a href="#">PRIVACY POLICY.</a>Site by Sideways8'	
+	) );
+	
+	$wp_customize->add_setting( 'footer_phone_text' , array(
+		'default'     => '513 297 2834'	
+	) );
+	
+	$wp_customize->add_control( 'footer_location_text', array(
+		'label'      => __( 'Footer Location text', 'watchdogs' ),
+		'settings'   => 'footer_location_text',
+		'section'    => 'watchdogs_footer_texts',
+	) ) ;
+	
+	$wp_customize->add_control( 'footer_email_text', array(
+		'label'      => __( 'Footer Email text', 'watchdogs' ),
+		'settings'   => 'footer_email_text',
+		'section'    => 'watchdogs_footer_texts',
+	) ) ;
+	
+	$wp_customize->add_control( 'footer_phone_text', array(
+		'label'      => __( 'Footer Phone text', 'watchdogs' ),
+		'settings'   => 'footer_phone_text',
+		'section'    => 'watchdogs_footer_texts',
+	) ) ;
+	
+	$wp_customize->add_control( 'copyright', array(
+		'label'      => __( 'Copyright Text', 'watchdogs' ),
+		'settings'   => 'copyright',
+		'section'    => 'watchdogs_footer_texts',
+	) ) ;
+	
+	$wp_customize->add_control( 'additional_text', array(
+		'label'      => __( 'Additional Footer Text', 'watchdogs' ),
+		'settings'   => 'additional_text',
+		'section'    => 'watchdogs_footer_texts',
+	) ) ;
+	
 }
 add_action( 'customize_register', 'watchdogs_customize_register' );
 
@@ -231,3 +291,14 @@ function set_tab_content($atts, $content = ''){
 				'<div class="tab-content">' . $content . '</div>' .
 			'</div>';
 }
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'footer-menu' => __( 'Footer Menu' ),
+      
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+

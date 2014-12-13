@@ -27,13 +27,13 @@
 
 <channel>
 	<title>Watchdogs</title>
-	<link>http://localhost:8080/watchdogs</link>
+	<link>http://localhost/watchdogs</link>
 	<description>Just another WordPress site</description>
 	<pubDate>Fri, 12 Dec 2014 02:54:25 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://localhost:8080/watchdogs</wp:base_site_url>
-	<wp:base_blog_url>http://localhost:8080/watchdogs</wp:base_blog_url>
+	<wp:base_site_url>http://localhost/watchdogs</wp:base_site_url>
+	<wp:base_blog_url>http://localhost/watchdogs</wp:base_blog_url>
 
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>admin</wp:author_login><wp:author_email>aldogcarlos@hotmail.com</wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
@@ -43,10 +43,10 @@
 
 	<item>
 				<title>Hello world!</title>
-		<link>http://localhost:8080/watchdogs/?p=1</link>
+		<link>http://localhost/watchdogs/?p=1</link>
 		<pubDate>Thu, 11 Dec 2014 03:02:28 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/?p=1</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -93,10 +93,10 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 	</item>
 	<item>
 				<title>Sample Page</title>
-		<link>http://localhost:8080/watchdogs/?page_id=2</link>
+		<link>http://localhost/watchdogs/?page_id=2</link>
 		<pubDate>Thu, 11 Dec 2014 03:02:28 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/?page_id=2</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/?page_id=2</guid>
 		<description></description>
 		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
 
@@ -106,7 +106,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 
 <blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
 
-As a new WordPress user, you should go to <a href="http://localhost:8080/watchdogs/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
+As a new WordPress user, you should go to <a href="http://localhost/watchdogs/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2</wp:post_id>
 		<wp:post_date>2014-12-11 03:02:28</wp:post_date>
@@ -127,10 +127,10 @@ As a new WordPress user, you should go to <a href="http://localhost:8080/watchdo
 	</item>
 	<item>
 				<title>WHAT WE DO</title>
-		<link>http://localhost:8080/watchdogs/?p=4</link>
+		<link>http://localhost/watchdogs/?p=4</link>
 		<pubDate>Thu, 11 Dec 2014 03:13:53 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/?p=4</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/?p=4</guid>
 		<description></description>
 		<content:encoded><![CDATA[We provide audio-visual design and management for corporate events. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
 
@@ -183,10 +183,10 @@ As a new WordPress user, you should go to <a href="http://localhost:8080/watchdo
 	</item>
 	<item>
 				<title>section2background</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=8</link>
+		<link>http://localhost/watchdogs/?attachment_id=8</link>
 		<pubDate>Thu, 11 Dec 2014 03:19:18 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/section2background.png</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/section2background.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -202,7 +202,7 @@ As a new WordPress user, you should go to <a href="http://localhost:8080/watchdo
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/section2background.png</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/section2background.png</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/section2background.png]]></wp:meta_value>
@@ -214,10 +214,10 @@ As a new WordPress user, you should go to <a href="http://localhost:8080/watchdo
 	</item>
 	<item>
 				<title>WHAT WE DO</title>
-		<link>http://localhost:8080/watchdogs/?p=9</link>
+		<link>http://localhost/watchdogs/?p=9</link>
 		<pubDate>Thu, 11 Dec 2014 04:00:11 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/?p=9</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/?p=9</guid>
 		<description></description>
 		<content:encoded><![CDATA[With a little tiny bit of description sitting below.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -254,10 +254,10 @@ Statement.]]></wp:meta_value>
 	</item>
 	<item>
 				<title>Title 1</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=12</link>
+		<link>http://localhost/watchdogs/?attachment_id=12</link>
 		<pubDate>Thu, 11 Dec 2014 04:40:56 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/1.jpg</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[What to expect if you dare to click on one of these thumbnails!]]></content:encoded>
 		<excerpt:encoded><![CDATA[What to expect if you dare to click on one of these thumbnails!]]></excerpt:encoded>
@@ -273,7 +273,7 @@ Statement.]]></wp:meta_value>
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/1.jpg</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/1.jpg</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/1.jpg]]></wp:meta_value>
@@ -285,10 +285,10 @@ Statement.]]></wp:meta_value>
 	</item>
 	<item>
 				<title>Title 2</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=13</link>
+		<link>http://localhost/watchdogs/?attachment_id=13</link>
 		<pubDate>Thu, 11 Dec 2014 04:40:56 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/2.jpg</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/2.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[What to expect if you dare to click on one of these thumbnails 2!]]></content:encoded>
 		<excerpt:encoded><![CDATA[What to expect if you dare to click on one of these thumbnails! 2]]></excerpt:encoded>
@@ -304,7 +304,7 @@ Statement.]]></wp:meta_value>
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/2.jpg</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/2.jpg</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/2.jpg]]></wp:meta_value>
@@ -316,10 +316,10 @@ Statement.]]></wp:meta_value>
 	</item>
 	<item>
 				<title>Title 3</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=14</link>
+		<link>http://localhost/watchdogs/?attachment_id=14</link>
 		<pubDate>Thu, 11 Dec 2014 04:40:57 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/3.jpg</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[What to expect if you dare to click on one of these thumbnails! 3]]></content:encoded>
 		<excerpt:encoded><![CDATA[What to expect if you dare to click on one of these thumbnails! 3]]></excerpt:encoded>
@@ -335,7 +335,7 @@ Statement.]]></wp:meta_value>
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/3.jpg</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/3.jpg</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/3.jpg]]></wp:meta_value>
@@ -347,10 +347,10 @@ Statement.]]></wp:meta_value>
 	</item>
 	<item>
 				<title>HOW WE DO IT</title>
-		<link>http://localhost:8080/watchdogs/?p=24</link>
+		<link>http://localhost/watchdogs/?p=24</link>
 		<pubDate>Thu, 11 Dec 2014 05:30:30 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/?p=24</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/?p=24</guid>
 		<description></description>
 		<content:encoded><![CDATA[[start_tabs]
 [tab tab_title="Research"]
@@ -407,10 +407,10 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 	</item>
 	<item>
 				<title>section3background</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=25</link>
+		<link>http://localhost/watchdogs/?attachment_id=25</link>
 		<pubDate>Thu, 11 Dec 2014 05:30:18 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/section3background.png</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/section3background.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -426,7 +426,7 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/section3background.png</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/section3background.png</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/section3background.png]]></wp:meta_value>
@@ -438,10 +438,10 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 	</item>
 	<item>
 				<title>logo</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=38</link>
+		<link>http://localhost/watchdogs/?attachment_id=38</link>
 		<pubDate>Fri, 12 Dec 2014 02:02:44 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/logo.png</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/logo.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -457,7 +457,7 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/logo.png</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/logo.png</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/logo.png]]></wp:meta_value>
@@ -469,10 +469,10 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 	</item>
 	<item>
 				<title>HANG OUT WITH US</title>
-		<link>http://localhost:8080/watchdogs/?p=39</link>
+		<link>http://localhost/watchdogs/?p=39</link>
 		<pubDate>Fri, 12 Dec 2014 02:08:41 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/?p=39</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/?p=39</guid>
 		<description></description>
 		<content:encoded><![CDATA[Interested in working with Watchdog to create innovative data-powered experiences for your company or brand? Send a message to our PR Director, to set up a meeting with our team.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -512,10 +512,10 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 	</item>
 	<item>
 				<title>section4background</title>
-		<link>http://localhost:8080/watchdogs/?attachment_id=40</link>
+		<link>http://localhost/watchdogs/?attachment_id=40</link>
 		<pubDate>Fri, 12 Dec 2014 02:08:32 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8080/watchdogs/wp-content/uploads/2014/12/section4background.png</guid>
+		<guid isPermaLink="false">http://localhost/watchdogs/wp-content/uploads/2014/12/section4background.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -531,7 +531,7 @@ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bib
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://localhost:8080/watchdogs/wp-content/uploads/2014/12/section4background.png</wp:attachment_url>
+		<wp:attachment_url>http://localhost/watchdogs/wp-content/uploads/2014/12/section4background.png</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[2014/12/section4background.png]]></wp:meta_value>
