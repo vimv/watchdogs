@@ -41,16 +41,16 @@
 	margin-right:0;
 }
 
-.nav-h-menu li a{
+.nav.nav-h-menu li a{
 	color: 999999;
 	font-weight: bold;
 	font-size: 1.3em;
+	padding: 0;
 	text-decoration: none;
 }
 
 .nav-h-menu li a:hover{
 	color: #264195;
-
 }
 
 #header-menu{
@@ -358,5 +358,9 @@ div.watchdog-form_wrapper.gform_wrapper .gform_footer.left_label {
 	
 	#slider {
 	    padding: 15% 15% 7%;
+	}
+	
+	nav.navbar.navbar-default{
+		margin-top: 135px;
 	}
 }

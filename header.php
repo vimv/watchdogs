@@ -45,32 +45,41 @@
 					</div>
 					
 					<div class="col-sm-6">
-						<ul class="nav-h-menu">
-							<li>
-								<a href="#slider">HOME</a>
-							</li>
-							<?php 
-								query_posts(array(
-									'posts_per_page' => -1,
-									'meta_key' => 'weight',
-									'orderby' => 'meta_value',
-									'order' => 'ASC'
-								));
-							?>
-							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-							<?php $image = (has_post_thumbnail( get_the_ID() )) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ) : ''?>
-								<?php $menu_id = str_replace('-', '_', sanitize_title(get_the_title())) . '_link';?>
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav nav-h-menu">
 								<li>
-									<a href="<?php echo '#' . $menu_id; ?>"><?php echo get_theme_mod($menu_id); ?></a>
+									<a href="#slider">HOME</a>
 								</li>
-								<?php $i++;?>
-							<?php endwhile; endif; ?>
-							<li>
-								<img src="<?php bloginfo('template_url'); ?>/images/search.png" />
-							</li>
-						</ul>
-						
-					</div>
-					
+								<?php 
+									query_posts(array(
+										'posts_per_page' => -1,
+										'meta_key' => 'weight',
+										'orderby' => 'meta_value',
+										'order' => 'ASC'
+									));
+								?>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+								<?php $image = (has_post_thumbnail( get_the_ID() )) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' ) : ''?>
+									<?php $menu_id = str_replace('-', '_', sanitize_title(get_the_title())) . '_link';?>
+									<li>
+										<a href="<?php echo '#' . $menu_id; ?>"><?php echo get_theme_mod($menu_id); ?></a>
+									</li>
+									<?php $i++;?>
+								<?php endwhile; endif; ?>
+								<li>
+									<img src="<?php bloginfo('template_url'); ?>/images/search.png" />
+								</li>
+							</ul>
+						</div>
+						<div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+					</nav>
 				</div>
 			</div>	
