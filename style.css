@@ -3,6 +3,7 @@
 	Author: Ivan Themes
 	Version: 1.0
 */
+body{ font-size: 13px; }
 
 .relative{
 	position: relative;
@@ -351,6 +352,12 @@ div.watchdog-form_wrapper.gform_wrapper .gform_footer.left_label {
 	}
 }
 
+@media (min-width: 768px) {
+	.navbar-nav{
+		float: right;
+	}
+}
+
 @media (max-width: 768px) {
 	.nav-tabs > li {
 		text-align: center;
@@ -421,8 +428,8 @@ div.watchdog-form_wrapper.gform_wrapper .gform_footer.left_label {
 
 	.nav.nav-h-menu li a{
 		color: #264195;
-		font-weight: bold;
-		font-size: 1.3em;
+		font-weight: 800;
+		font-size: 1.2em;
 		padding: 0;
 		text-decoration: none;
 	}

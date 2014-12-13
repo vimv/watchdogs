@@ -30,7 +30,7 @@
 				</div>
 			</div>
 			
-			<div id="header-menu">
+			<div id="header-menu" class="container">
 				<div class="row header-padding">
 					<div class="col-sm-3">						
 					</div>
@@ -82,4 +82,5 @@
 						
 					</nav>
 				</div>
-			</div>	
+			</div>
+		</div>		
