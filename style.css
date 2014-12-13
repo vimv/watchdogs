@@ -60,7 +60,8 @@
 .header-padding{
 	padding-top: 55px;
 }
-section {
+section,
+#slider {
 	border-bottom: 2px solid #ffffff;
     border-top: 2px solid #ffffff;
     min-height: 300px;
@@ -78,12 +79,24 @@ header h2 {
     font-weight: bold;
     margin-top: 0;
 }
-section.odd header h1{
+section.odd header h1,
+.slides section header h1,
+.slides section header h2,
+.slides section article p{
 	text-align: right;
+}
+.slides section article p{
+	width: initial;
 }
 section article p {
     color: #ffffff;
     width: 55%;
+}
+.responsive-slider.flexslider .flex-control-nav li a{
+	background-position: 0 -111px;
+}
+.responsive-slider.flexslider .flex-control-nav li a:hover, .responsive-slider.flexslider .flex-control-nav li a.active{
+	background-position: initial;
 }
 /* Tabs */
 .tab-content > div {
@@ -128,6 +141,7 @@ article .table {
     border-bottom: none;
 }
 .nav-h-menu a{
+	font-family: "Open Sans", "Arial";
 	text-transform: uppercase;
 }
 /* To Remove */
@@ -154,11 +168,25 @@ footer .description {
 /***********Slider*************/
 #slider{
 	background-image: url(images/background-slider.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	min-height:600px;
+	background-size: cover;
 }
-
+.slides section{
+	border: 0;
+	padding: 0;
+}
+.responsive-slider.flexslider .flex-control-nav{
+	bottom: -20% !important;
+}
+.responsive-slider.flexslider a,
+.responsive-slider.flexslider a:visited,
+.responsive-slider.flexslider a:hover{
+	color: #ffffff;
+}
+.responsive-slider.flexslider h2 a{
+	font-family: "Open Sans", "Arial";
+	font-size: 45px;
+	font-weight: normal;
+}
 /***********Footer Top*************/
 #footer-top{
 	background-color: #162656;
@@ -219,6 +247,7 @@ footer .description {
 }
 
 .footer-up{
+	cursor: pointer;
 	position: absolute;
 	top: 38px;
 	right: 0;
@@ -250,4 +279,84 @@ footer .description {
 
 .footer-bot-menu-priv li a{
 	color: white;
+}
+/* Watchdog Form */
+div.watchdog-form_wrapper{
+	margin-top: 50px;
+}
+div.watchdog-form_wrapper.gform_wrapper .left_label label{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: -3px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 20%;
+}
+div.watchdog-form_wrapper .gfield_required{
+    display: none;
+}
+div.watchdog-form_wrapper textarea,
+div.watchdog-form_wrapper input[type="text"],
+div.watchdog-form_wrapper input[type="submit"]{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    font-size: 16px;
+}
+div.watchdog-form_wrapper .gfield_error textarea,
+div.watchdog-form_wrapper .gfield_error input[type="text"]{
+	color: #000000;
+}
+div.watchdog-form_wrapper textarea{
+	width: 90%;
+}
+div.watchdog-form_wrapper input[type="submit"] {
+	background-color: rgba(255, 255, 255, 0);
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+div.watchdog-form_wrapper.gform_wrapper .gform_footer.left_label {
+    margin-left: 15px;
+    padding: 16px 0 10px 20%;
+}
+
+
+@media (max-width: 768px) {
+	.nav-tabs > li {
+		text-align: center;
+		width: 100%;
+	}
+	.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus{
+		background-color: #eeeeee;
+		color: #337ab7;
+	}
+	
+	section article p {
+	    width: 100%;
+	}
+	
+	div.watchdog-form_wrapper.gform_wrapper .left_label label{
+		text-align: initial;
+		width: 100%;
+	}
+	.gform_wrapper .watchdog-form .right_label input.medium,
+	.gform_wrapper .watchdog-form .right_label select.medium,
+	.gform_wrapper .watchdog-form .left_label input.medium,
+	.gform_wrapper .watchdog-form .left_label select.medium {
+	    width: 100%;
+	}
+	.gform_wrapper .watchdog-form .right_label input.large,
+	.gform_wrapper .watchdog-form .right_label select.large,
+	.gform_wrapper .watchdog-form .left_label input.large,
+	.gform_wrapper .watchdog-form .left_label select.large,
+	.gform_wrapper .watchdog-form textarea.textarea {
+	    width: 100%;
+	}
+	
+	#slider {
+	    padding: 15% 15% 7%;
+	}
 }

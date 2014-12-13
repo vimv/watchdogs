@@ -17,30 +17,68 @@ add_theme_support( 'post-thumbnails' );
 
 function watchdogs_customize_register( $wp_customize ) {
 	
+	// === Menu Settings
+	$wp_customize->add_section( 'watchdogs_menu' , array(
+		'title'       => __( 'Menu Settings', 'watchdogs' ),
+		'description' => 'Menu Settings',
+	));
+		$wp_customize->add_setting( 'home_link' , array(
+			'default'  => 'Home'
+		));
+		
+		$wp_customize->add_control( 'home_link', array(
+			'label'      => __( 'Home Link', 'watchdogs' ),
+			'settings'   => 'home_link',
+			'section'    => 'watchdogs_menu',
+		) ) ;
+		
+		query_posts(array(
+			'posts_per_page' => -1,
+			'meta_key' => 'weight',
+			'orderby' => 'meta_value',
+			'order' => 'ASC'
+		));
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+			$menu_id = str_replace('-', '_', sanitize_title(get_the_title())) . '_link';
+			$wp_customize->add_setting( $menu_id , array(
+				'default'  => get_the_title()
+			));
+		endwhile; endif;
+		
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+			$menu_id = str_replace('-', '_', sanitize_title(get_the_title())) . '_link';
+			$wp_customize->add_control( $menu_id, array(
+				'label'      => __( get_the_title() . ' Link', 'watchdogs' ),
+				'settings'   => $menu_id,
+				'section'    => 'watchdogs_menu',
+			) ) ;
+		endwhile; endif;
+	// === /Menu Settings
+	
 	$wp_customize->add_section( 'watchdogs_images' , array(
 		'title'       => __( 'Logo Images', 'watchdogs' ),
 		'description' => 'Site Images',
 	) );
    
-   $wp_customize->add_setting( 'header_logo' , array(
-		'default'     => get_bloginfo('template_url').'/images/logo.png'	
-	) );
-	
-	$wp_customize->add_setting( 'footer_logo' , array(
-		'default'     => get_bloginfo('template_url').'/images/watchdog-logo-footer.png'	
-	) );
+	   $wp_customize->add_setting( 'header_logo' , array(
+			'default'     => get_bloginfo('template_url').'/images/logo.png'	
+		) );
 		
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_logo', array(
-		'label'        => __( 'Header Logo', 'mytheme' ),
-		'settings'   => 'header_logo',
-		'section'    => 'watchdogs_images',
-	) ) );
-	
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_logo', array(
-		'label'        => __( 'Header Logo', 'mytheme' ),
-		'settings'   => 'footer_logo',
-		'section'    => 'watchdogs_images',
-	) ) );
+		$wp_customize->add_setting( 'footer_logo' , array(
+			'default'     => get_bloginfo('template_url').'/images/watchdog-logo-footer.png'	
+		) );
+			
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_logo', array(
+			'label'        => __( 'Header Logo', 'mytheme' ),
+			'settings'   => 'header_logo',
+			'section'    => 'watchdogs_images',
+		) ) );
+		
+		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_logo', array(
+			'label'        => __( 'Footer Logo', 'mytheme' ),
+			'settings'   => 'footer_logo',
+			'section'    => 'watchdogs_images',
+		) ) );
 	
 	//Social Media Section
 	$wp_customize->add_section( 'watchdogs_social_media' , array(
@@ -61,19 +99,19 @@ function watchdogs_customize_register( $wp_customize ) {
 	) );
 	
 	$wp_customize->add_control( 'face_link', array(
-		'label'        => __( 'Facebook Link', 'watchdogs' ),
+		'label'      => __( 'Facebook Link', 'watchdogs' ),
 		'settings'   => 'face_link',
 		'section'    => 'watchdogs_social_media',
 	) ) ;
 	
 	$wp_customize->add_control(  'twitter_link', array(
-		'label'        => __( 'Twitter Link', 'watchdogs' ),
+		'label'      => __( 'Twitter Link', 'watchdogs' ),
 		'settings'   => 'twitter_link',
 		'section'    => 'watchdogs_social_media',
 	) ) ;
 	
 	$wp_customize->add_control( 'linkedin_link', array(
-		'label'        => __( 'Linkedin Link', 'watchdogs' ),
+		'label'      => __( 'Linkedin Link', 'watchdogs' ),
 		'settings'   => 'linkedin_link',
 		'section'    => 'watchdogs_social_media',
 	) ) ;
@@ -92,19 +130,19 @@ function watchdogs_customize_register( $wp_customize ) {
 	) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_social_face', array(
-		'label'        => __( 'Facebook Header Image', 'watchdogs' ),
+		'label'      => __( 'Facebook Header Image', 'watchdogs' ),
 		'settings'   => 'header_social_face',
 		'section'    => 'watchdogs_social_media',
 	) ) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_social_twitter', array(
-		'label'        => __( 'Twitter Header Image', 'watchdogs' ),
+		'label'      => __( 'Twitter Header Image', 'watchdogs' ),
 		'settings'   => 'header_social_twitter',
 		'section'    => 'watchdogs_social_media',
 	) ) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'header_social_linked', array(
-		'label'        => __( 'Linkedin header Image', 'watchdogs' ),
+		'label'      => __( 'Linkedin header Image', 'watchdogs' ),
 		'settings'   => 'header_social_linked',
 		'section'    => 'watchdogs_social_media',
 	) ) );
@@ -125,19 +163,19 @@ function watchdogs_customize_register( $wp_customize ) {
 	) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_social_face', array(
-		'label'        => __( 'Facebook Header Image', 'watchdogs' ),
+		'label'      => __( 'Facebook Header Image', 'watchdogs' ),
 		'settings'   => 'footer_social_face',
 		'section'    => 'watchdogs_social_media',
 	) ) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_social_twitter', array(
-		'label'        => __( 'Twitter Footer Image', 'watchdogs' ),
+		'label'      => __( 'Twitter Footer Image', 'watchdogs' ),
 		'settings'   => 'footer_social_twitter',
 		'section'    => 'watchdogs_social_media',
 	) ) );
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_social_linked', array(
-		'label'        => __( 'Linkedin header Image', 'watchdogs' ),
+		'label'      => __( 'Linkedin header Image', 'watchdogs' ),
 		'settings'   => 'footer_social_linked',
 		'section'    => 'watchdogs_social_media',
 	) ) );
