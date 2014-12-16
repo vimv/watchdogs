@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title><?php wp_title(); ?></title>				
+		<title><?php bloginfo('name'); ?></title>				
 
     	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="logo relative">
-							<img class="top-logo" src="<?php echo get_theme_mod('header_logo') ?>" />
+							<img class="top-logo" src="<?php echo get_theme_mod('header_logo') ?>"  alt="Header Logo" />
 						</div>
 					</div>			
 				</div>
@@ -37,9 +37,9 @@
 					
 					<div class="col-sm-3 col-md-2">
 						<ul class="social-h-wrap">
-							<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_face') ?>" /></a></li>
-							<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_twitter') ?>" /></a></li>
-							<li><a href="<?php echo get_theme_mod('linkedin_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_linked') ?>" /></a></li>
+							<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_face') ?>" alt="icon" /></a></li>
+							<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_twitter') ?>" alt="icon" /></a></li>
+							<li><a href="<?php echo get_theme_mod('linkedin_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('header_social_linked') ?>" alt="icon "/></a></li>
 						</ul>
 										
 					</div>
@@ -75,7 +75,7 @@
 									<?php $i++;?>
 								<?php endwhile; endif; ?>
 								<li>
-									<img src="<?php bloginfo('template_url'); ?>/images/search.png" />
+									<img src="<?php bloginfo('template_url'); ?>/images/search.png" alt="icon" />
 								</li>
 							</ul>
 						</div>
