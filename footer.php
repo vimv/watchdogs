@@ -6,10 +6,10 @@
 				
 		<div class="container">
 			<div class="row">			
-				<div class="col-sm-3">
+				<div class="col-md-3">
 					<img src="<?php echo get_theme_mod('footer_logo'); ?>" alt="Footer Logo" />
 				</div>			
-				<div class="col-sm-9">
+				<div class="col-md-9">
 					<?php 
 						wp_nav_menu( 
 							array( 'theme_location' => 'footer-menu', 
@@ -40,8 +40,8 @@
 	<div id="footer-bottom">
 		<div class="container">
 			<div class="row">			
-				<div class="col-sm-4"></div>			
-				<div class="col-sm-4">						
+				<div class="col-md-3"></div>			
+				<div class="col-md-6">						
 					<ul class="footer-bottom-social">
 						<li><a href="<?php echo get_theme_mod('face_link') ?>" target="_blank"><img  src="<?php echo get_theme_mod('footer_social_face'); ?>" alt="img icon face"/></a></li>
 						<li><a href="<?php echo get_theme_mod('twitter_link') ?>" target="_blank"><img src="<?php echo get_theme_mod('footer_social_twitter'); ?>" alt="img icon twitter" /></a></li>
@@ -59,7 +59,7 @@
 						</li>										
 					</ul>
 				</div>
-				<div class="col-sm-4"></div>	
+				<div class="col-sm-3"></div>	
 			</div>		
 		</div>
 	</div>
