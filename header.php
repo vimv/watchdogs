@@ -73,10 +73,7 @@
 										<a href="<?php echo '#' . $menu_id; ?>"><?php echo get_theme_mod($menu_id); ?></a>
 									</li>
 									<?php $i++;?>
-								<?php endwhile; endif; ?>
-								<li>
-									<img src="<?php bloginfo('template_url'); ?>/images/search.png" alt="icon" />
-								</li>
+								<?php endwhile; endif; ?>								
 							</ul>
 						</div>
 						
