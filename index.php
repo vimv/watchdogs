@@ -4,13 +4,7 @@
 		<section id="slider" >
 			<?php echo do_shortcode( '[responsive_slider]' ); ?>
 		</section>
-		<?php 
-			query_posts(array(
-				'posts_per_page' => -1,
-				'meta_key' => 'weight',
-				'orderby' => 'meta_value',
-				'order' => 'ASC'
-			));
+		<?php 			
 			$i = 0;
 		?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

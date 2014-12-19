@@ -302,3 +302,16 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+
+function init_index_settings($query){
+	
+	if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', '-1' );
+		$query->set( 'meta_key', 'weight' );
+		$query->set( 'orderby', 'meta_value' );
+		$query->set( 'order', 'ASC' );
+    }
+	
+}
+
+ add_action( 'pre_get_posts', 'init_index_settings' );
