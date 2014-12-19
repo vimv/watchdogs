@@ -1,0 +1,465 @@
+/*
+	Theme Name: Watchdogs
+	Author: Sideways8 Interactive
+	Version: 1.0
+*/
+body{ font-size: 13px; }
+
+.relative{
+	position: relative;
+}
+
+/************header******************/
+.top-nav{
+	border-bottom: solid #b4b4b4 2px;
+	min-height: 35px;
+}
+
+.top-logo{
+	position: absolute;
+	top: 16px;
+	z-index: 1;
+}
+
+.social-h-wrap, 
+.nav-h-menu{
+	list-style: none;
+	
+
+}
+.social-h-wrap{
+	text-align: right;	
+}
+
+.social-h-wrap li{
+	display: inline-block;
+	margin-right:5px;
+}
+
+.nav-h-menu li{
+	display: inline-block;
+	margin-right:20px;
+
+}
+
+.nav-h-menu li:last-child{
+	margin-right:0;
+}
+
+.nav.nav-h-menu li a{
+	color: #999999;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 0;
+	text-decoration: none;
+}
+
+.nav-h-menu li a:hover{
+	color: #264195;
+}
+
+#header-menu{
+	min-height: 130px;
+}
+
+.header-padding{
+	padding-top: 55px;
+}
+section,
+#slider {
+	border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    min-height: 300px;
+    padding: 7% 15%;
+}
+header h1 {
+    color: #ffffff;
+    font-family: Ubuntu,Arial;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+header h2 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+}
+section.odd header h1,
+.slides section header h1,
+.slides section header h2,
+.slides section article p{
+	text-align: right;
+}
+.slides section article p{
+	width: initial;
+}
+section article p {
+    color: #ffffff;
+    width: 55%;
+}
+.responsive-slider.flexslider .flex-control-nav li a{
+	background-position: 0 -111px;
+}
+.responsive-slider.flexslider .flex-control-nav li a:hover, .responsive-slider.flexslider .flex-control-nav li a.active{
+	background-position: initial;
+}
+/* Tabs */
+
+ .tab-content > div {
+	color: #ffffff;
+    padding: 5% 0 0 5%;
+}
+ .tab-content > div .tab-title {
+    font-family: "Ubuntu",Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ .nav-tabs > li {
+    border-bottom: 1px solid #ffffff;
+}
+ .nav-tabs > li.active {
+    border-bottom: none;
+}
+.nav-tabs > li > a{
+	border: medium none;
+    margin-right: 0;
+}
+.nav > li > a {
+	color: #fff;
+    padding: 20px 35px;
+    text-transform: uppercase;
+}
+#main-content .nav > li > a:hover {
+	color: #337ab7;
+}
+#main-content .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background-color: initial;
+	color: #ffffff;
+	outline: none;
+}
+article .table {
+	display: table;   /* Allow the centering to work */
+	margin: 70px auto 0;
+	width: initial;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav>li>a:hover, 
+.nav>li>a:focus{
+	text-decoration: none;
+	background-color: transparent;
+}
+
+#main-content .nav>li>a:hover, 
+#main-content .nav>li>a:focus{
+	text-decoration: none;
+	background-color: #eee;
+}
+
+.nav-h-menu a{
+	font-family: "Open Sans", "Arial";
+	text-transform: uppercase;
+}
+
+.navbar-toggle, .navbar-toggle span{
+	border: solid #ccc 2px;
+}
+
+/* To Remove */
+footer.row {
+    color: #ffffff;
+    margin-top: 90px;
+}
+footer .title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+footer .description {
+    font-size: 13px;
+}
+.no-padding-left{
+	padding-left: 0 !important;
+}
+.no-padding-right{
+	padding-right: 0 !important;
+}
+/* /To Remove */
+
+/***********Slider*************/
+#slider{
+	background-image: url(images/background-slider.png);
+	background-size: cover;
+}
+.slides section{
+	border: 0;
+	padding: 0;
+}
+.responsive-slider.flexslider .flex-control-nav{
+	bottom: -20% !important;
+}
+.responsive-slider.flexslider a,
+.responsive-slider.flexslider a:visited,
+.responsive-slider.flexslider a:hover{
+	color: #ffffff;
+}
+.responsive-slider.flexslider h2 a{
+	font-family: "Open Sans", "Arial";
+	font-size: 45px;
+	font-weight: normal;
+}
+/***********Footer Top*************/
+#footer-top{
+	background-color: #162656;
+	min-height: 150px;
+	overflow: hidden;
+}
+
+.separator-footer{
+	height:1px;
+	width: 100%;
+	border-bottom: solid #576285 1px;
+	position: absolute;
+	top: 45%;
+	margin-left: 20%;
+}
+
+.footer-top-menu1,
+.footer-top-section2{
+	list-style: none;
+}
+
+.footer-top-menu1 li,
+.footer-top-section2 li{
+	display: inline-block;
+	margin-top: 30px;
+	vertical-align: top;
+	color: white;
+}
+
+.footer-top-menu1 li{
+	margin-right: 40px;
+}
+
+.footer-top-menu1 li:last-child,
+.footer-top-section2 li:last-child{
+	margin-right: 0;
+}
+
+.footer-top-menu1 li a{
+	color: white;
+	
+}
+
+.footer-top-section2 li{
+	margin-right: 70px;
+}
+
+.footer-top-section2 li img{
+	margin-right: 10px;
+	margin-top: 3px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+
+.footer-top-section2 li:first-child img{
+	padding-left: 10px;
+}
+
+.footer-up{
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	right: 0;
+}
+
+/***********Footer Bottom*************/
+
+#footer-bottom{
+	background-color: #18203b;
+	min-height: 150px;
+}
+
+.footer-bottom-social,
+.footer-bot-menu-priv{
+	text-align: center;
+}
+
+.footer-bottom-social li,
+.footer-bot-menu-priv li{
+	display: inline-block;
+	margin-top: 20px;
+	vertical-align: top;
+	color: white;	
+}
+
+.footer-bottom-social li{
+	margin-right: 5px;
+}
+
+.footer-bot-menu-priv li a{
+	color: white;
+}
+/* Watchdog Form */
+div.watchdog-form_wrapper{
+	margin-top: 50px;
+}
+div.watchdog-form_wrapper.gform_wrapper .left_label label{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: -3px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 20%;
+	line-height: 40px;
+}
+div.watchdog-form_wrapper .gfield_required{
+    display: none;
+}
+div.watchdog-form_wrapper textarea,
+div.watchdog-form_wrapper input[type="text"],
+div.watchdog-form_wrapper input[type="submit"]{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    font-size: 16px;
+}
+div.watchdog-form_wrapper .gfield_error textarea,
+div.watchdog-form_wrapper .gfield_error input[type="text"]{
+	color: #000000;
+}
+div.watchdog-form_wrapper textarea{
+	width: 90%;
+}
+div.watchdog-form_wrapper input[type="submit"] {
+	background-color: rgba(255, 255, 255, 0);
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+div.watchdog-form_wrapper.gform_wrapper .gform_footer.left_label {
+    margin-left: 15px;
+    padding: 16px 0 10px 20%;
+}
+
+
+input#gform_submit_button_1 {padding: 15px 25px 15px 25px;}
+
+@media (max-width: 1199px) {
+	.top-logo{
+		width: 263px;
+		top: 19px;
+	}
+}
+
+@media (max-width: 991px) {
+	.separator-footer{
+		display:none;
+	}
+	.footer-up{
+		top: -50%
+	}
+	#menu-footer-menu, .footer-top-section2{
+		text-align: center;
+		padding-left:0;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav{
+		float: right;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-tabs > li {
+		text-align: center;
+		width: 100%;
+	}
+	.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus{
+		background-color: #eeeeee;
+		color: #337ab7;
+	}
+	
+	section article p {
+	    width: 100%;
+	}
+	
+	div.watchdog-form_wrapper.gform_wrapper .left_label label{
+		text-align: initial;
+		width: 100%;
+	}
+	.gform_wrapper .watchdog-form .right_label input.medium,
+	.gform_wrapper .watchdog-form .right_label select.medium,
+	.gform_wrapper .watchdog-form .left_label input.medium,
+	.gform_wrapper .watchdog-form .left_label select.medium {
+	    width: 100%;
+	}
+	.gform_wrapper .watchdog-form .right_label input.large,
+	.gform_wrapper .watchdog-form .right_label select.large,
+	.gform_wrapper .watchdog-form .left_label input.large,
+	.gform_wrapper .watchdog-form .left_label select.large,
+	.gform_wrapper .watchdog-form textarea.textarea {
+	    width: 100%;
+	}
+	
+	#slider {
+	    padding: 15% 15% 7%;
+	}
+	
+	nav.navbar.navbar-default{
+		margin-top: 135px;
+	}
+	
+	.social-h-wrap{
+		margin-top: -86px;
+		position: relative;
+		z-index: 999;
+		float: right;		
+	}
+	
+	
+	/*Menu Responsive*/
+	.nav-h-menu{
+		margin-top: 10px;
+		padding: 55px 0 15px 15px;
+		background-color: #ccc;
+	}
+	.nav-h-menu li{
+		display: block;		
+		padding-bottom:10px;
+		margin-bottom:10px;
+		border-bottom: solid gray 1px;
+		
+	}
+
+	.nav-h-menu li:last-child{
+		display:none;
+	}
+
+	.nav.nav-h-menu li a{
+		color: #264195;
+		font-weight: 800;
+		font-size: 1.2em;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	.nav-h-menu li a:hover{
+		color: #999;
+	}
+		
+	
+}
+
+@media (max-width: 450px) {
+	.footer-up{
+		top: -27%
+	}
+}
