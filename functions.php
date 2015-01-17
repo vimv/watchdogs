@@ -288,7 +288,7 @@ function set_tab_content($atts, $content = ''){
 	$tab_title = sanitize_title($atts['tab_title']);
 	$tabs .= '<div id="' . $tab_title . '" role="tabpanel" class="tab-pane ' . $atts['active'] . ' col-sm-7" >' .
 				'<div class="tab-title">' . $atts['content_title'] . '</div>' .
-				'<div class="tab-content" data-match-height="group-name">' . $content . '</div>' .
+				'<div class="tab-content" >' . $content . '</div>' .
 			'</div>';
 }
 
