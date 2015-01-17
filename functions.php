@@ -274,9 +274,9 @@ function tab($attr, $content = false){
 	), $attr );
 	
 	set_tab_content($a, $content);
-	
+	$tab_title = sanitize_title($a['tab_title']);
 	return '<li role="presentation" class="' . $a['active'] . '">
-				<a href="#' . strtolower($a['tab_title']) . '" aria-controls="' . strtolower($a['tab_title']) . '" role="tab" data-toggle="tab">' . 
+				<a href="#' . $tab_title . '" aria-controls="' . $tab_title . '" role="tab" data-toggle="tab">' . 
 					$a['tab_title'] . 
 				'</a>
 			</li>';
@@ -285,10 +285,10 @@ add_shortcode("tab", "tab");
 
 function set_tab_content($atts, $content = ''){
 	global $tabs;
-	
-	$tabs .= '<div id="' . strtolower($atts['tab_title']) . '" role="tabpanel" class="tab-pane ' . $atts['active'] . ' col-sm-7" >' .
+	$tab_title = sanitize_title($atts['tab_title']);
+	$tabs .= '<div id="' . $tab_title . '" role="tabpanel" class="tab-pane ' . $atts['active'] . ' col-sm-7" >' .
 				'<div class="tab-title">' . $atts['content_title'] . '</div>' .
-				'<div class="tab-content">' . $content . '</div>' .
+				'<div class="tab-content" data-match-height="group-name">' . $content . '</div>' .
 			'</div>';
 }
 
